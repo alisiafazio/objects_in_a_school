@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Objects in a School</title>
+    <script src = "objects.js"></script>
+    <script src = "data.js"></script>
+    <script src = "actions.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body onLoad= "setUp()">
+<h1> Objects in a School </h1>
+
+<select id="categories">
+    <option value="0">Students</option>
+    <option value="1">Teachers</option>
+    <option value="2">Sections</option>
+</select>
+<button id="listButton" onclick="listItems()">List Items</button>
+<br>
+<br>
+<div id="listOutput"></div>
+<hr>
+<br>
+<select id="studentList">
+    <option value="0">Select Student</option>
+</select>
+<select id="sectionList">
+    <option value="0">Select Section</option>
+</select>
+<button id="addButton" onclick="addStudentToSection()">Add Selection</button>
+<button id="removeButton" onclick="removeStudentFromSection()">Remove Selection</button>
+<br>
+<div id="addStudentToSection"></div>
+<div id="removeStudentFromSection"></div>
+<br>
+<select id="teacherList">
+    <option value="0">Select Teacher</option>
+</select>
+<select id="listSection">
+    <option value="0">Select Section</option>
+</select>
+<button id="buttonAdd" onclick="addTeacherToSection()">Add Selection</button>
+<button id="buttonRemove" onclick="removeTeacherFromSection()">Remove Selection</button>
+<br>
+<div id="addTeacherToSection"></div>
+<div id="removeTeacherFromSection"></div>
+<br>
+<hr>
+<br>
+<section>
+  Add: To add an item please enter it the way you would like to to be listed in the system.
+<br>
+</section>
+<br>
+<input id="studentFirstName" placeholder="first name">
+<input id="studentLastName" placeholder="last name">
+<input id="studentGrade" placeholder="grade">
+<button id="addStudent" onclick="addStudent()">Add Student</button>
+<br>
+<br>
+<input id="teacherFirstName" placeholder="first name">
+<input id="teacherLastName" placeholder="last name">
+<input id="teacherSubject" placeholder="subject">
+<button id="addTeacher" onclick="addTeacher()">Add Teacher</button>
+<br>
+<br>
+<input id="sectionName" placeholder="section name">
+<input id="sectionSize" placeholder="section size">
+<button id="addSection" onclick="addSection()">Add Section</button>
+<br>
+<br>
+<div id="add"></div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+h1{
+    text-align: center;
+    font-family: "American Typewriter";
+}
+body{
+    background-color: pink;
+    color: white;
+    font-family: "American Typewriter";
+    font-size: large;
+}
+button{
+    font-size: large;
+    background-color: white;
+    font-family: "American Typewriter";
+}
+input{
+    font-size: large;
+    font-family: "American Typewriter";
+}
+select{
+    font-size: large;
+    font-family: "American Typewriter";
+}
+table{
+    border-color: black;
+    background-color: white;
+    color: pink;
+    font-size: large;
+}
+section{
+    font-size: x-large;
+}
+#add{
+    font-size: x-large;
+}
+#addButton{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);}
+#addButton:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#removeButton{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#removeButton:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#buttonAdd{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#buttonAdd:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#buttonRemove{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#buttonRemove:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#addStudent{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#addStudent:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#addTeacher{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#addTeacher:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#addSection{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#addSection:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+#listButton{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#listButton:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
