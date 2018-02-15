@@ -112,3 +112,13 @@ section{
     box-shadow: none;
     color: white;
 }
+#listItemsInASection{
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+#listItemsInASection:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
