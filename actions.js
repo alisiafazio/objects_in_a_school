@@ -163,12 +163,6 @@ function removeStudentFromSection(){
     }
     document.getElementById("removeStudentFromSection").innerHTML = studentObject.firstName + " " + studentObject.lastName + " has been removed from " + sectionObject.name + ".";
 }
-// function removeTeacherFromSection(){
-//     var teacherObject = getTeacherById(document.getElementById("teacherList").value);
-//     var sectionObject = getSectionById(document.getElementById("listSection").value);
-//     sectionObject.teacher =- teacherObject;
-//     document.getElementById("removeTeacherFromSection").innerHTML = teacherObject.firstName + " " + teacherObject.lastName + " has been removed from " + sectionObject.name + ".";
-// }
 function buildSelectionList() {
     document.getElementById("itemsList").innerHTML = "";
     var itemsList = "<option>Select Item </option>";
@@ -178,12 +172,13 @@ function buildSelectionList() {
     document.getElementById("itemsList").innerHTML += itemsList;
 }
 function listItemsInASection(){
+    var section = getSectionById(document.getElementById("itemsList").value);
     var listOutput = "<table border = 1>";
-        for (var i = 0; i < allStudents.length; i++) {
+        for (var i = 0; i < section.students.length; i++) {
             listOutput += "<tr>";
-            listOutput += "<td>" + allStudents[i].firstName + "</td>";
-            listOutput += "<td>" + allStudents[i].lastName + "</td>";
-            listOutput += "<td>" + allStudents[i].grade + "</td>";
+            listOutput += "<td>" + section.students[i].firstName + "</td>";
+            listOutput += "<td>" + section.students[i].lastName + "</td>";
+            listOutput += "<td>" + section.students[i].grade + "</td>";
             listOutput += "</tr>";
         }
         listOutput += "</table>";
