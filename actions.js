@@ -110,6 +110,7 @@ function addSection(){
     clearBoxes();
     buildSectionSelection();
     buildSectionOfSelections();
+    buildSelectionList();
 }
 function clearBoxes(){
     var elements = document.getElementsByTagName("input");
@@ -119,21 +120,21 @@ function clearBoxes(){
         }
     }
 }
-function getStudentById(studentId) {
+function getStudentById(studentId){
     for(var i = 0; i < allStudents.length; i++){
         if(allStudents[i].id == studentId){
             return allStudents[i];
         }
     }
 }
-function getTeacherById(teacherId) {
+function getTeacherById(teacherId){
     for(var i = 0; i < allTeachers.length; i++){
         if(allTeachers[i].id == teacherId){
             return allTeachers[i];
         }
     }
 }
-function getSectionById(sectionId) {
+function getSectionById(sectionId){
     for(var i = 0; i < allSections.length; i++){
         if(allSections[i].id == sectionId){
             return allSections[i];
@@ -163,18 +164,18 @@ function removeStudentFromSection(){
     }
     document.getElementById("removeStudentFromSection").innerHTML = studentObject.firstName + " " + studentObject.lastName + " has been removed from " + sectionObject.name + ".";
 }
-function buildSelectionList() {
+function buildSelectionList(){
     document.getElementById("itemsList").innerHTML = "";
-    var itemsList = "<option>Select Item </option>";
+    var sectionList = "<option> Select Item </option>";
         for (var i = 0; i < allSections.length; i++){
-            itemsList += "<option value ='" +  allSections[i].id + "'>" + allSections[i].name + "</option>"
+            sectionList += "<option value ='" + allSections[i].id + "'>" + allSections[i].name + "</option>"
         }
-    document.getElementById("itemsList").innerHTML += itemsList;
+    document.getElementById("itemsList").innerHTML += sectionList;
 }
 function listItemsInASection(){
     var section = getSectionById(document.getElementById("itemsList").value);
     var listOutput = "<table border = 1>";
-        for (var i = 0; i < section.students.length; i++) {
+        for (var i = 0; i < section.students.length; i++){
             listOutput += "<tr>";
             listOutput += "<td>" + section.students[i].firstName + "</td>";
             listOutput += "<td>" + section.students[i].lastName + "</td>";
